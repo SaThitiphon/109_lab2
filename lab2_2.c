@@ -4,7 +4,6 @@ int main()
     float time,m1=199,m2=299,a,b;
     char pro;
     scanf("%c",&pro);
-    fflush(stdin);
     scanf("%f",&time);
     if(pro=='A')
     {
@@ -16,7 +15,7 @@ int main()
         {
             a = (int)time - 200;
             a = a * 3;
-            printf("%.2f",m1+a);
+            printf("%.2f",m1+a+1);
         }
     }
     else if(pro=='B')
@@ -27,9 +26,9 @@ int main()
         }
         else
         {
-            b = (int)time - 200;
+            b = (int)time - 400;
             b = b * 2;
-            printf("%.2f",m2+b);
+            printf("%.2f",m2+b+1);
         }
     }
 }
