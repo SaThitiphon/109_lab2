@@ -20,6 +20,6 @@ int main()
         printf("D+");
     else if(d>=50&&d<=54)
         printf("D");
-    else if(d>50)
+    else if(d<50&&d>=0)
         printf("F");
 }
