@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int main()
 {
     float time,m1=199,m2=299,a,b,c=200,d=400;
@@ -14,9 +15,9 @@ int main()
         }
         else
         {
-            a = time - c;
+            a = floor(time) - c;
             a = a * 3;
-            printf("%.2f",m1+a);
+            printf("%.2f",m1+a+1);
         }
     }
     else if(pro=='B')
@@ -27,10 +28,9 @@ int main()
         }
         else
         {
-            b = time - d;
+            b = floor(time) - d;
             b = b * 2;
-            printf("%.2f",m2+b);
+            printf("%.2f",m2+b+1);
         }
     }
 }
-
