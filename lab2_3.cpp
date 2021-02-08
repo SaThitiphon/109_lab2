@@ -5,7 +5,6 @@ int main()
     int n[4],i,a,b,c,max,mid,min;
     string s;
     cin >>a>>b>>c;
-    fflush(stdin);
     cin >> s;
     max = n[0];
     if(a>b&&a>c)
@@ -27,7 +26,7 @@ int main()
     else if((b>c&&b<a)||(b<c&&b>a))
         mid = b;
     if(s=="ABC")
-    {    
+    {
         cout <<min;
         cout <<" ";
         cout <<mid;
@@ -35,7 +34,7 @@ int main()
         cout <<max;
     }
     else if(s=="BCA")
-    {    
+    {
         cout <<mid;
         cout <<" ";
         cout <<max;
@@ -43,7 +42,7 @@ int main()
         cout <<min;
     }
     else if(s=="CAB")
-    {   
+    {
         cout <<max;
         cout <<" ";
         cout <<min;
@@ -51,7 +50,7 @@ int main()
         cout <<mid;
     }
     else if(s=="ACB")
-    {    
+    {
         cout <<min;
         cout <<" ";
         cout <<max;
@@ -59,7 +58,7 @@ int main()
         cout <<mid;
     }
     else if(s=="CBA")
-    {    
+    {
         cout <<max;
         cout <<" ";
         cout <<mid;
@@ -67,7 +66,7 @@ int main()
         cout <<min;
     }
     else if(s=="BAC")
-    {  
+    {
         cout <<mid;
         cout <<" ";
         cout <<min;
