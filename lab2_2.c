@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 int main()
 {
     float time,m1=199,m2=299,a,b,c=200,d=400;
@@ -15,7 +14,7 @@ int main()
         }
         else
         {
-            a = floor(time) - c;
+            a = (int)time - c;
             a = a * 3;
             printf("%.2f",m1+a+1);
         }
@@ -28,7 +27,7 @@ int main()
         }
         else
         {
-            b = floor(time) - d;
+            b = (int)time - d;
             b = b * 2;
             printf("%.2f",m2+b+1);
         }
